@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="https://auth.pingone.asia/c06acc03-8ad7-4a1a-8d17-f4e7fb945b40" ID="DUp57Bcq-y4RtkrRLyYj2fYxtqR" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIIDejCCAmKgAwIBAgIGAXkskxsDMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYT
+            AlVTMRYwFAYDVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50
+            aXR5MT8wPQYDVQQDDDZQaW5nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgQWRtaW5p
+            c3RyYXRvcnMgZW52aXJvbm1lbnQwHhcNMjEwNTAyMTAxNTA4WhcNMjIwNTAyMTAx
+            NTA4WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQG
+            A1UECwwNUGluZyBJZGVudGl0eTE/MD0GA1UEAww2UGluZ09uZSBTU08gQ2VydGlm
+            aWNhdGUgZm9yIEFkbWluaXN0cmF0b3JzIGVudmlyb25tZW50MIIBIjANBgkqhkiG
+            9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3EUdcujnFgDDO5TovRm3jGmRvDiO5nunkYdA
+            WgcLCO4PEZpCexP7KC2Gyk+gxR4E4w2hVoy6FxdMdX0PAFtSlzGuEo0QX5NVFzhH
+            yZvne3/boRDlwCWmytTj3oGKGLLj/g5gzG/Ltxo/hUjJsNWs6aQAQsyHJyunZ2FP
+            jsvA6pG51DRpir93uCcy805AyUthdieQuWs1MUuWqz9WAVs4ZQzPCcv49JYRj0TT
+            ih4jHiDsXJqiuLVg7seOjSFwVweF+wutDokHaRSM3q09bmXv7cxtTKf4V2mgBcZF
+            T+1tMI0O29rxe2r0FgHxFm7tPjsWJqMgHPooj/gJz51RwboHrQIDAQABMA0GCSqG
+            SIb3DQEBCwUAA4IBAQAmNIwcm82W7AQG98ZikgZFq2GZmlA04zlSHMxdtAKIhuUp
+            KDazAjMufl4j6RNnbUwlSfuCrkcdbx35uiaIpWTGpjrFwjNoMyK4lEjUDTSflfC/
+            whvl0KMADHD6opS+Snes7nMji+hW2h4vip7GHMssjhZVHuzps+Zh0fykRv3CRCmZ
+            BF2FvpbLDEHOCIJguAq2jEdchN5iWnkg+uzs1q/Ob0IWxw+0tI6JBzy6q7hs6M6k
+            BXEGzp7K7NGEg6WOvQg6X/8rTtUrYtdKieA/cV5cRYOyrBH4Sr8Ulh9RTYKuyytF
+            jcwnufQScC8Ws4/qyjPICuFLSBS+sUUaZ+Uno9UC
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Location="https://auth.pingone.asia/c06acc03-8ad7-4a1a-8d17-f4e7fb945b40/saml20/idp/slo" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"/>
+    <md:SingleLogoutService Location="https://auth.pingone.asia/c06acc03-8ad7-4a1a-8d17-f4e7fb945b40/saml20/idp/slo" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+    <md:SingleSignOnService Location="https://auth.pingone.asia/c06acc03-8ad7-4a1a-8d17-f4e7fb945b40/saml20/idp/sso" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+    <md:SingleSignOnService Location="https://auth.pingone.asia/c06acc03-8ad7-4a1a-8d17-f4e7fb945b40/saml20/idp/sso" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.title" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.nickname" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.memberOfGroupNames" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.primaryPhone" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.memberOfGroupIDs" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.lifecycle.status" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.email" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.population.id" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.enabled" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.externalId" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.updatedAt" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.identityProvider.type" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.identityProvider.id" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.username" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.createdAt" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.id" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.timezone" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.type" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.mfaEnabled" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.family" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.honorificPrefix" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.formatted" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.middle" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.honorificSuffix" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.name.given" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.locale" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.accountId" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.account.unlockAt" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.account.lockedAt" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.account.canAuthenticate" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.account.secondsUntilUnlock" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.account.status" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.photo.href" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.mobilePhone" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.lastSignOn.remoteIp" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.lastSignOn.at" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.address.region" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.address.streetAddress" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.address.locality" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.address.postalCode" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.address.countryCode" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="user.preferredLanguage" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
