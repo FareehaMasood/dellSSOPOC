@@ -140,10 +140,10 @@ SAML2_AUTH = {
         'first_name': 'FirstName',
         'last_name': 'LastName',
     },
-    'TRIGGER': {
-        'CREATE_USER': 'path.to.your.new.user.hook.method',
-        'BEFORE_LOGIN': 'path.to.your.login.hook.method',
-    },
+    # 'TRIGGER': {
+    #     'CREATE_USER': 'path.to.your.new.user.hook.method',
+    #     'BEFORE_LOGIN': 'path.to.your.login.hook.method',
+    # },
     'ASSERTION_URL': 'https://sso.xiq.io', # Custom URL to validate incoming SAML requests against
     'ENTITY_ID': 'xiQdemo', # Populates the Issuer element in authn request
     # 'ENTITY_ID': 'http://127.0.0.1:8000/saml2_auth/acs/', # Populates the Issuer element in authn request
