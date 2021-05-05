@@ -25,8 +25,7 @@ SECRET_KEY = '01sjq8ot^+w&8f4ymfwfu2tsdh(#oypn^!%ma$hc(7o+zeli#j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://sso.xiq.io','https://sso.xiq.io','54.189.7.149']
-
+ALLOWED_HOSTS = ['http://sso.xiq.io','https://sso.xiq.io','54.189.7.149', '*']
 
 # Application definition
 
@@ -123,8 +122,8 @@ STATIC_URL = '/static/'
 SAML2_AUTH = {
     # Metadata is required, choose either remote url or local file path
     # 'METADATA_AUTO_CONF_URL': '',
-    'METADATA_LOCAL_FILE_PATH': 'E:/xiQ_tasks/DellSSO/dellSSO/samlConf.xml',
-
+    'METADATA_LOCAL_FILE_PATH': '/home/ubuntu/saml/ssopoc/samlConf.xml',
+    # 'METADATA_LOCAL_FILE_PATH': 'E:/xiQ_tasks/DellSSO/dellSSO/samlConf.xml',
     # Optional settings below
     'DEFAULT_NEXT_URL': '/admin',  # Custom target redirect URL after the user get logged in. Default to /admin if not set. This setting will be overwritten if you have parameter ?next= specificed in the login URL.
     'CREATE_USER': 'TRUE', # Create a new Django user when a new user logs in. Defaults to True.
@@ -140,10 +139,10 @@ SAML2_AUTH = {
         'first_name': 'FirstName',
         'last_name': 'LastName',
     },
-    'TRIGGER': {
-        'CREATE_USER': 'path.to.your.new.user.hook.method',
-        'BEFORE_LOGIN': 'path.to.your.login.hook.method',
-    },
+    # 'TRIGGER': {
+    #     'CREATE_USER': 'path.to.your.new.user.hook.method',
+    #     'BEFORE_LOGIN': 'path.to.your.login.hook.method',
+    # },
     'ASSERTION_URL': 'https://sso.xiq.io', # Custom URL to validate incoming SAML requests against
     'ENTITY_ID': 'xiQdemo', # Populates the Issuer element in authn request
     # 'ENTITY_ID': 'http://127.0.0.1:8000/saml2_auth/acs/', # Populates the Issuer element in authn request
