@@ -6,7 +6,7 @@ import sys
 sys.path.append('/home/ubuntu/saml/ssopoc')
 sys.path.append('/home/ubuntu/saml/ssopoc/dellSSO')
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'settings_server'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'dellSSO.settings'
 django.setup()
 
 import django.core.handlers.wsgi
