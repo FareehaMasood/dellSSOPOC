@@ -35,5 +35,5 @@ urlpatterns = [
     # with this view.
     url(r'^admin/login/$', django_saml2_auth.views.signin),
     path('admin/', admin.site.urls),
-    path('acs/', views.Samlsso.as_view()),
+    path('sso/acs/', views.Samlsso.as_view()),
 ]

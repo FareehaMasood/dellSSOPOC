@@ -124,7 +124,7 @@ SAML2_AUTH = {
     # Metadata is required, choose either remote url or local file path
     # 'METADATA_AUTO_CONF_URL': '',
     'METADATA_LOCAL_FILE_PATH': '/home/ubuntu/saml/ssopoc/samlConf.xml',
-
+    # 'METADATA_LOCAL_FILE_PATH': 'E:/xiQ_tasks/DellSSO/dellSSO/samlConf.xml',
     # Optional settings below
     'DEFAULT_NEXT_URL': '/admin',  # Custom target redirect URL after the user get logged in. Default to /admin if not set. This setting will be overwritten if you have parameter ?next= specificed in the login URL.
     'CREATE_USER': 'TRUE', # Create a new Django user when a new user logs in. Defaults to True.
