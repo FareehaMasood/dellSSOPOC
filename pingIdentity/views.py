@@ -9,9 +9,9 @@ from django.views import View
 # Create your views here.
 
 
-class Login(View):
+class Samlsso(View):
     def __init__(self):
-        super(Login, self).__init__()
+        super(Samlsso, self).__init__()
 
     def get(self, request, *args, **kwargs):
         now = datetime.datetime.now()
