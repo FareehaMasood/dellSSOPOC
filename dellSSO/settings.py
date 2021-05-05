@@ -25,7 +25,7 @@ SECRET_KEY = '01sjq8ot^+w&8f4ymfwfu2tsdh(#oypn^!%ma$hc(7o+zeli#j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://sso.xiq.io/']
 
 
 # Application definition
@@ -144,9 +144,11 @@ SAML2_AUTH = {
         'CREATE_USER': 'path.to.your.new.user.hook.method',
         'BEFORE_LOGIN': 'path.to.your.login.hook.method',
     },
-    'ASSERTION_URL': 'https://mysite.com', # Custom URL to validate incoming SAML requests against
-    'ENTITY_ID': 'https://mysite.com/saml2_auth/acs/', # Populates the Issuer element in authn request
-    # 'NAME_ID_FORMAT': FormatString, # Sets the Format property of authn NameIDPolicy element
+    'ASSERTION_URL': 'https://sso.xiq.io', # Custom URL to validate incoming SAML requests against
+    'ENTITY_ID': 'xiQdemo', # Populates the Issuer element in authn request
+    # 'ENTITY_ID': 'http://127.0.0.1:8000/saml2_auth/acs/', # Populates the Issuer element in authn request
+
+    'NAME_ID_FORMAT': 'emailAddress', # Sets the Format property of authn NameIDPolicy element
     'USE_JWT': False, # Set this to True if you are running a Single Page Application (SPA) with Django Rest Framework (DRF), and are using JWT authentication to authorize client users
     'FRONTEND_URL': 'https://myfrontendclient.com', # Redirect URL for the client if you are using JWT auth with DRF. See explanation below
 }

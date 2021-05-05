@@ -15,8 +15,9 @@ class Login(View):
 
     def get(self, request, *args, **kwargs):
         now = datetime.datetime.now()
-        html = "<html><body>It is now %s.</body></html>" % now
+        html = "<html><body>SSO update: It is now %s.</body></html>" % now
         return HttpResponse(html)
 
     def post(self, request, *args, **kwargs):
+
         return None
