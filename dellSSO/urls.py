@@ -23,7 +23,7 @@ import django_saml2_auth.views
 urlpatterns = [
     # These are the SAML2 related URLs. You can change "^saml2_auth/" regex to
     # any path you want, like "^sso_auth/", "^sso_login/", etc. (required)
-    url(r'^sso/', include('django_saml2_auth.urls')),
+    #url(r'^sso/', include('django_saml2_auth.urls')),
 
     # The following line will replace the default user login with SAML2 (optional)
     # If you want to specific the after-login-redirect-URL, use parameter "?next=/the/path/you/want"
