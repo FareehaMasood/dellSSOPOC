@@ -25,7 +25,7 @@ SECRET_KEY = '01sjq8ot^+w&8f4ymfwfu2tsdh(#oypn^!%ma$hc(7o+zeli#j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://sso.xiq.io/']
+ALLOWED_HOSTS = ['http://sso.xiq.io','https://sso.xiq.io','54.189.7.149']
 
 
 # Application definition
